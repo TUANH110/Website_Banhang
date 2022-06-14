@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300;400&display=swap');
+:root {
+    --main-color:rgb(23,50,57);
+    --sub-color: #eaa023;
+    --text-color: #ffffff;
+    --bg-color: #1f5c62;
+}
+.section-title{
+    width:100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.section-title h2{
+    font-size: 30px;
+    color:var(--bg-color);
+    text-transform: uppercase;
+}
+.section-title h2::before{
+    content: attr(data-title);
+    display:block;
+    font-size: 20px;
+    color: var(--sub-color);
+    font-family: 'Dancing Script';
+    text-align: center;
+}
+.row {
+    display:flex;
+}
+.team{
+    background-color:lightblue;
+}
+.team-items {
+    padding: 15px;
+    width:calc(100%/3);
+    position:relative;
+}
+.team-items img{
+    width:100%;
+    border-radius: 10px;
+}
+.team-items:hover .team-items-text{
+    background-color:var(--sub-color);
+}
+
+.team-items-text {
+    position:absolute;
+    padding:15px 0;
+    right:30px;
+    left:30px;
+    background-color:var(--sub-color);
+    text-align: center;
+    border-radius: 10px;
+    transform:translateY(50%);
+}
+.team-items-text h2{
+    color: var(--bg-color);
+}
+.team-items-text span{
+    color: var(--bg-color);
+    font-size: 20px;
+}
