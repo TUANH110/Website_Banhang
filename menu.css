@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300;400&display=swap');
+:root {
+    --main-color:rgb(23,50,57);
+    --sub-color: #eaa023;
+    --text-color: #ffffff;
+    --bg-color: #1f5c62;
+}
+.section-title{
+    width:100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.section-title h2{
+    font-size: 40px;
+    color:var(--text-color);
+    text-transform: uppercase;
+}
+.section-title h2::before{
+    content: attr(data-title);
+    display:block;
+    font-size: 24px;
+    color: var(--sub-color);
+    font-family: 'Dancing Script';
+}
+
+.menu {
+    background-color: var(--bg-color);
+}
+.menu-title{
+    width:100%;
+    text-align: center;
+
+}
+.menu-title .menu-button{
+    background-color: transparent;
+    margin:10px 12px;
+    border:none;
+    font-size: 20px;
+    color:var(--text-color);
+    cursor:pointer;
+
+}
+.menu-title .menu-button.active{
+    color: var(--sub-color);
+}
+.menu-title .menu-button:hover{
+    color:var(--sub-color);
+}
+.food-items {
+    width:50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 15px;
+    position:relative;
+}
+.food-items::before {
+    content:"";
+    display:block;
+    position:absolute;
+    left:15px;
+    right:15px;
+    bottom: 0;
+    border: 1px dashed var(--main-color);
+}
+.food-items:hover .food-item p {
+    color: var(--sub-color);
+}
+.food-items:hover .food-price p {
+    color: var(--text-color);
+}
+.food-item {
+    display:flex;
+    align-items: center;
+}
+.food-item img{
+    width:150px;
+    margin-right: 25px;
+}
+.food-item p{
+    color: var(--text-color);
+    transition:all 0.3s ease-in;
+    font-size: 20px;
+}
+.food-price p{
+    color: var(--sub-color);
+    transition:all 0.3s ease-in;
+    font-size: 20px;
+}
+.menu-item-content {
+    display: none;
+}
+.menu-item-content.active {
+    display:flex;
+    flex-wrap: wrap;
+}
