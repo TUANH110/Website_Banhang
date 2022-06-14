@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300;400&display=swap');
+body{
+    background-image: url("/about-4.jpg");
+    font-family: sans-serif;
+}
+p{
+    font-size: 30px;
+    color:aliceblue;
+    font-family: 'Dancing Script';
+    text-align: center;
+}
+fieldset{
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    border:1px solid grey;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: darkkhaki;
+}
+.login input {
+    width: 400px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.chonnhag{
+    width: 430px;
+    height: 35px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
